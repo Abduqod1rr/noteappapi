@@ -19,3 +19,5 @@ class CrudNote(generics.RetrieveUpdateDestroyAPIView):
     queryset = Note.objects.all()
     serializer_class=noteserializers
     permission_classes=[IsOwner]
+
+
