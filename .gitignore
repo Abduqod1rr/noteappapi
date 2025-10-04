@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+db.sqlite3
+/media/
+staticfiles/
+static/
+.env
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# PostgreSQL dump files
+*.sql
+*.pgsql
+
+# Virtual environments
+venv/
+env/
+.noteapivn/
+.noteapi/
+.noteapi_env/
+noteapivn/
+Lib/
+Scripts/
+Include/
+
+# VSCode & IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
