@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from .models import Note
-from .serializer import noteserializers
+from .serializer import noteserializers ,RegisterSerializer
 from rest_framework import generics
 from .permissions import IsOwner
-# Create your views here.
+from django.contrib.auth.models import User
+
+class Reister(generics.CreateAPIView):
+    queryset= User.objects.all()
+    serializer_class = RegisterSerializer
+
 
 class WriteNote(generics.CreateAPIView):
     queryset = Note.objects.all()
