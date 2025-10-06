@@ -8,5 +8,5 @@ class Note(models.Model):
     put_at=models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:
-        return f"{self.title}"
+        return f"{self.title}."
 
